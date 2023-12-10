@@ -98,14 +98,12 @@ function calc() {
     rate = calcRate(rate, $("#parant2").val(), true);
 
     if (isBonus()) {
-        console.log(rate)
         rate[0] += 4;
         rate[1] += 4;
         rate[2] += 4;
         rate[3] += 4;
         rate[4] += 4;
         rate[5] += 4;
-        console.log(rate)
     }
 
     var max_hp = $("#hp").val() * rate[0] / 100;
