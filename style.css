@@ -23,10 +23,26 @@ input {
 
 .tree_row {
     display: flex;
+    justify-content: center;
+    margin: 24px 0;
 }
 
-.tree_container {
+#tree_container {
     display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.grand_container {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+}
+
+.parent_container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
 
