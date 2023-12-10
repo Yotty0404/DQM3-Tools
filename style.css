@@ -1,0 +1,45 @@
+#container {
+    display: flex;
+}
+
+.status_row {
+    display: flex;
+    height: 30px;
+}
+
+    .status_row > div {
+        width: 60px;
+    }
+
+input {
+    height: 16px;
+    width: 80px;
+}
+
+#tree {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree_row {
+    display: flex;
+}
+
+.tree_container {
+    display: flex;
+}
+
+
+input:read-only,
+textarea:read-only {
+    background-color: #ddd;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 16px;
+}
+
+
+.title {
+    margin-top: 24px;
+}

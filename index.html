@@ -1,0 +1,129 @@
+<head>
+    <title>Flash Typing</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="status">
+            <div class="status_row">
+                <div>HP</div>
+                <input type="number" id="hp" size="4" />
+            </div>
+            <div class="status_row">
+                <div>MP</div>
+                <input type="number" id="mp" size="4" />
+            </div>
+            <div class="status_row">
+                <div>攻撃</div>
+                <input type="number" id="attack" size="4" />
+            </div>
+            <div class="status_row">
+                <div>守備</div>
+                <input type="number" id="defence" size="4" />
+            </div>
+            <div class="status_row">
+                <div>素早さ</div>
+                <input type="number" id="speed" size="4" />
+            </div>
+            <div class="status_row">
+                <div>賢さ</div>
+                <input type="number" id="intelligence" size="4" />
+            </div>
+        </div>
+
+        <div>
+            <div id="tree">
+                <div class="tree_row">
+                    <div class="tree_container">
+                        <div>祖父母1</div>
+                        <select class="grand1 grand" size="1"></select>
+                    </div>
+                    <div class="tree_container">
+                        <div>祖父母2</div>
+                        <select class="grand2 grand" size="1"></select>
+                    </div>
+                    <div class="tree_container">
+                        <div>祖父母3</div>
+                        <select class="grand3 grand" size="1"></select>
+                    </div>
+                    <div class="tree_container">
+                        <div>祖父母4</div>
+                        <select class="grand4 grand" size="1"></select>
+                    </div>
+                </div>
+                <div class="tree_row">
+                    <div class="tree_container">
+                        <div>親1</div>
+                        <select id="parant1" class="parent" size="1"></select>
+                    </div>
+                    <div class="tree_container">
+                        <div>親2</div>
+                        <select id="parant2" class="parent" size="1"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="title">行動回数補正</div>
+        <div style="display:flex;">
+            <input type="radio" id="action0" name="action" checked />
+            <label for="action0">1回行動</label>
+            <input type="radio" id="action1" name="action" />
+            <label for="action1">1~2回行動</label>
+            <input type="radio" id="action2" name="action" />
+            <label for="action2">2回行動</label>
+            <input type="radio" id="action3" name="action" />
+            <label for="action3">1~3回行動</label>
+            <input type="radio" id="action4" name="action" />
+            <label for="action4">2~3回行動</label>
+
+        </div>
+    </div>
+
+
+    <div>
+        <div class="title">サイズ補正</div>
+        <input type="checkbox" id="size" />
+        <label for="size">Lサイズ</label>
+    </div>
+
+
+    <div class="title">最大値</div>
+    <div id="status">
+        <div class="status_row">
+            <div>HP</div>
+            <input type="number" id="max_hp" size="4" readonly />
+        </div>
+        <div class="status_row">
+            <div>MP</div>
+            <input type="number" id="max_mp" size="4" readonly />
+        </div>
+        <div class="status_row">
+            <div>攻撃</div>
+            <input type="number" id="max_attack" size="4" readonly />
+        </div>
+        <div class="status_row">
+            <div>守備</div>
+            <input type="number" id="max_defence" size="4" readonly />
+        </div>
+        <div class="status_row">
+            <div>素早さ</div>
+            <input type="number" id="max_speed" size="4" readonly />
+        </div>
+        <div class="status_row">
+            <div>賢さ</div>
+            <input type="number" id="max_intelligence" size="4" readonly />
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="script.js?20230425-01"></script>
+<link rel="stylesheet" href="style.css?20230425-01">
