@@ -75,9 +75,20 @@ function calcRate(rate, monster, isParent) {
     return rate;
 }
 
+function isBonus() {
+    const array1 = [$(".grand1").val(), $(".grand2").val(), $(".grand3").val(), $(".grand4").val()];
+    const array2 = [...new Set(array1)];
+
+    if (array2.length == 4) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 function calc() {
     var rate = [100, 100, 100, 100, 100, 100];
-
 
     rate = calcRate(rate, $(".grand1").val(), false);
     rate = calcRate(rate, $(".grand2").val(), false);
@@ -86,12 +97,23 @@ function calc() {
     rate = calcRate(rate, $("#parant1").val(), true);
     rate = calcRate(rate, $("#parant2").val(), true);
 
+    if (isBonus()) {
+        console.log(rate)
+        rate[0] += 4;
+        rate[1] += 4;
+        rate[2] += 4;
+        rate[3] += 4;
+        rate[4] += 4;
+        rate[5] += 4;
+        console.log(rate)
+    }
+
     var max_hp = $("#hp").val() * rate[0] / 100;
-    var max_mp = $("#mp").val() * rate[0] / 100;
-    var max_attack = $("#attack").val() * rate[0] / 100;
-    var max_defence = $("#defence").val() * rate[0] / 100;
-    var max_speed = $("#speed").val() * rate[0] / 100;
-    var max_intelligence = $("#intelligence").val() * rate[0] / 100;
+    var max_mp = $("#mp").val() * rate[1] / 100;
+    var max_attack = $("#attack").val() * rate[2] / 100;
+    var max_defence = $("#defence").val() * rate[3] / 100;
+    var max_speed = $("#speed").val() * rate[4] / 100;
+    var max_intelligence = $("#intelligence").val() * rate[5] / 100;
 
     var action_rate = 100;
 
