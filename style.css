@@ -2,9 +2,15 @@
     display: flex;
 }
 
+#status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .status_row {
     display: flex;
-    height: 30px;
+    height: 28px;
 }
 
     .status_row > div {
@@ -12,7 +18,7 @@
     }
 
 input {
-    height: 16px;
+    height: 20px;
     width: 80px;
 }
 
@@ -33,22 +39,37 @@ input {
     margin-left: 60px;
 }
 
-.grand_container {
+
+.grand_container, .parent_container {
     display: flex;
     justify-content: center;
+    border: 2px solid #222;
+    border-radius: 5px;
+    padding: 8px 4px;
+    margin: 2px 10px;
+}
+
+.grand_container {
     width: 160px;
 }
 
-.parent_container {
+.parent_container_container {
     display: flex;
     justify-content: center;
     width: 50%;
 }
 
+.parent_container {
+    width: 160px;
+}
+
+select {
+    margin-left: 8px;
+}
 
 input:read-only,
 textarea:read-only {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -58,4 +79,64 @@ input[type="radio"], input[type="checkbox"] {
 
 .title {
     margin-top: 24px;
+}
+
+
+
+
+
+#line1 {
+    margin-left: -565px;
+}
+
+#line2 {
+    margin-left: -187px;
+}
+
+#line3 {
+    margin-left: 187px;
+}
+
+#line4 {
+    margin-left: 565px;
+}
+
+.line_vertical {
+    margin-top: 44px;
+    position: absolute;
+    border-left: 2px solid #222;
+    height: 24px;
+}
+
+
+#line5 {
+    margin-left: -376px;
+}
+
+#line6 {
+    margin-left: 376px;
+}
+
+.line_horizontal {
+    margin-top: 68px;
+    position: absolute;
+    border-bottom: 2px solid #222;
+    width: 191px;
+}
+
+
+
+#line7 {
+    margin-left: -376px;
+}
+
+#line8 {
+    margin-left: 376px;
+}
+
+.line_vertical2 {
+    margin-top: 68px;
+    position: absolute;
+    border-left: 2px solid #222;
+    height: 26px;
 }
