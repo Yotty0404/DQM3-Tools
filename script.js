@@ -198,3 +198,16 @@ $(".grand").change(function () {
 });
 
 setSelectBox();
+
+
+document.getElementById('btn_paste').addEventListener('click', async () => {
+    const text = await navigator.clipboard.readText();
+    var l_text = text.split("\t")
+
+    $("#hp").val(l_text[0]);
+    $("#mp").val(l_text[1]);
+    $("#attack").val(l_text[2]);
+    $("#defence").val(l_text[3]);
+    $("#speed").val(l_text[4]);
+    $("#intelligence").val(l_text[5]);
+});
