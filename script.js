@@ -145,16 +145,16 @@ function calc() {
         max_intelligence = max_intelligence * 110 / 100
     }
 
-    $("#max_hp").val(max_hp);
-    $("#max_mp").val(max_mp);
-    $("#max_attack").val(max_attack);
-    $("#max_defence").val(max_defence);
-    $("#max_speed").val(max_speed);
-    $("#max_intelligence").val(max_intelligence);
+    $("#max_hp").val(Math.round(max_hp));
+    $("#max_mp").val(Math.round(max_mp));
+    $("#max_attack").val(Math.round(max_attack));
+    $("#max_defence").val(Math.round(max_defence));
+    $("#max_speed").val(Math.round(max_speed));
+    $("#max_intelligence").val(Math.round(max_intelligence));
 
 }
 
-calc()
+calc();
 
 $('input').change(function () {
     calc();
