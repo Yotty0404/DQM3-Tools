@@ -210,4 +210,6 @@ document.getElementById('btn_paste').addEventListener('click', async () => {
     $("#defence").val(l_text[3]);
     $("#speed").val(l_text[4]);
     $("#intelligence").val(l_text[5]);
+
+    calc();
 });
