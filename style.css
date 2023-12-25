@@ -140,3 +140,36 @@ input[type="radio"], input[type="checkbox"] {
     border-left: 2px solid #222;
     height: 26px;
 }
+
+
+
+#container2 {
+    display: flex;
+}
+
+#container2_right {
+    display: flex;
+    align-items: center;
+}
+
+#tbl_keitou {
+    margin-left: 20px;
+    border: 1px solid #cecece;
+    border-spacing: 0;
+}
+
+    #tbl_keitou tr {
+        height: 10px;
+    }
+
+    #tbl_keitou th, #tbl_keitou td {
+        padding: 10px 0;
+        text-align: center;
+        width: 60px;
+        border: 1px solid #cecece;
+        line-height: 10px;
+    }
+
+    #tbl_keitou tr:nth-child(odd) {
+        background-color: #eee
+    }

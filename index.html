@@ -1,7 +1,7 @@
 <head>
     <title>DQM3-Tools</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css?20231211-02">
+    <link rel="stylesheet" href="style.css?0001">
 </head>
 
 <body>
@@ -85,62 +85,257 @@
         </div>
     </div>
 
-    <div>
-        <div class="title">行動回数補正</div>
-        <div style="display:flex;">
-            <input type="radio" id="action0" name="action" checked />
-            <label for="action0">1回行動</label>
-            <input type="radio" id="action1" name="action" />
-            <label for="action1">1~2回行動</label>
-            <input type="radio" id="action2" name="action" />
-            <label for="action2">2回行動</label>
-            <input type="radio" id="action3" name="action" />
-            <label for="action3">1~3回行動</label>
-            <input type="radio" id="action4" name="action" />
-            <label for="action4">2~3回行動</label>
+    <div id="container2">
+        <div id="container2_left">
+            <div>
+                <div class="title">行動回数補正</div>
+                <div style="display:flex;">
+                    <input type="radio" id="action0" name="action" checked />
+                    <label for="action0">1回行動</label>
+                    <input type="radio" id="action1" name="action" />
+                    <label for="action1">1~2回行動</label>
+                    <input type="radio" id="action2" name="action" />
+                    <label for="action2">2回行動</label>
+                    <input type="radio" id="action3" name="action" />
+                    <label for="action3">1~3回行動</label>
+                    <input type="radio" id="action4" name="action" />
+                    <label for="action4">2~3回行動</label>
 
+                </div>
+            </div>
+
+
+            <div>
+                <div class="title">サイズ補正</div>
+                <input type="checkbox" id="size" />
+                <label for="size">Lサイズ</label>
+            </div>
+
+
+            <div class="title">最大値</div>
+            <div id="status">
+                <div class="status_row">
+                    <div>HP</div>
+                    <input id="max_hp" size="4" readonly />
+                </div>
+                <div class="status_row">
+                    <div>MP</div>
+                    <input id="max_mp" size="4" readonly />
+                </div>
+                <div class="status_row">
+                    <div>攻撃</div>
+                    <input id="max_attack" size="4" readonly />
+                </div>
+                <div class="status_row">
+                    <div>守備</div>
+                    <input id="max_defence" size="4" readonly />
+                </div>
+                <div class="status_row">
+                    <div>素早さ</div>
+                    <input id="max_speed" size="4" readonly />
+                </div>
+                <div class="status_row">
+                    <div>賢さ</div>
+                    <input id="max_intelligence" size="4" readonly />
+                </div>
+            </div>
+        </div>
+
+
+        <div id="container2_right">
+
+            <table id="tbl_keitou">
+                <tr>
+                    <th style="width:100px;">
+                        系統
+                    </th>
+                    <th>
+                        HP
+                    </th>
+                    <th>
+                        MP
+                    </th>
+                    <th>
+                        攻撃
+                    </th>
+                    <th>
+                        守備
+                    </th>
+                    <th>
+                        素早
+                    </th>
+                    <th>
+                        賢さ
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        スライム
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ドラゴン
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        自然
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        物質
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        魔獣
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        悪魔
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        ゾンビ
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        ？？？
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-
-
-    <div>
-        <div class="title">サイズ補正</div>
-        <input type="checkbox" id="size" />
-        <label for="size">Lサイズ</label>
-    </div>
-
-
-    <div class="title">最大値</div>
-    <div id="status">
-        <div class="status_row">
-            <div>HP</div>
-            <input id="max_hp" size="4" readonly />
-        </div>
-        <div class="status_row">
-            <div>MP</div>
-            <input id="max_mp" size="4" readonly />
-        </div>
-        <div class="status_row">
-            <div>攻撃</div>
-            <input id="max_attack" size="4" readonly />
-        </div>
-        <div class="status_row">
-            <div>守備</div>
-            <input id="max_defence" size="4" readonly />
-        </div>
-        <div class="status_row">
-            <div>素早さ</div>
-            <input id="max_speed" size="4" readonly />
-        </div>
-        <div class="status_row">
-            <div>賢さ</div>
-            <input id="max_intelligence" size="4" readonly />
-        </div>
-    </div>
-
 
 </body>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="script.js?20231211-02"></script>
+<script src="script.js?0001"></script>
